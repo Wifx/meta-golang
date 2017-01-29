@@ -1,17 +1,3 @@
-From 81e9e322297d83f57f02548689c71859bfce10ee Mon Sep 17 00:00:00 2001
-From: Matt Madison <matt@madison.systems>
-Date: Sun, 15 Jan 2017 05:24:49 -0800
-Subject: [PATCH 6/6] linker: add soname to shareable objects
-
-Shared library handling in OE builds works better when shared
-libraries are tagged with SONAMEs.
-
-Upstream-Status: Pending
-Signed-off-by: Matt Madison <matt@madison.systems>
----
- src/cmd/link/internal/ld/lib.go | 3 +++
- 1 file changed, 3 insertions(+)
-
 diff --git a/src/cmd/link/internal/ld/lib.go b/src/cmd/link/internal/ld/lib.go
 index 74d79d3..6d03005 100644
 --- a/src/cmd/link/internal/ld/lib.go
@@ -39,6 +25,3 @@ index 74d79d3..6d03005 100644
  		}
  	}
  
--- 
-2.7.4
-
